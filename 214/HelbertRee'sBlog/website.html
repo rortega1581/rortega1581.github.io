@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  "Time till Herbert appears behind you: " +h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+</body>
+</html>
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mein Website</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        
+        
+    </head>
+    <body>
+        <h1 class="webTitle">
+            Helbert Ree's Blog
+        </h1>
+       
+        <img src="../images/helbertRee.jpg" alt="Helbert Ree" style="display: block;
+        margin-left: auto; margin-right: auto; width: 50%;" />
+       
+        <p class="description">
+            Hello. My name is Helbert Ree and I am an active and young white man.  I like cooking, sleeping, and cats. I also go to the gym to work on my strength. 
+            I go to <a href="https://www.harvard.edu/">Harvard University</a>, where I study economics. This is my website where I store my cat pictures among other things. 
+            I also like chemistry, so heres a free <a href="https://ptable.com/">periodic table.</a>
+        
+        </p>
+        
+        <p>
+            <a style="font-size: 30px;">Hiring Me</a> </br>
+            If you are interested in hiring me, please click <a href='resume.html'>here</a> to see my resume. 
+            I am also involved in engineering, so please contact me if you have any jobs for engineering.
+        </p>
+        
+        <a href="cats.html"><button class="clickButton">Click Here to See Cats!</button></a>
+        <a href="food.html"><button class="clickButton">Click Here to See Food!</button></a>
+        <a href="beds.html"><button class="clickButton">Click Here to See Beds!</button></a>
+    
+    
+    
+    </body>
+    
+    
+</html>
